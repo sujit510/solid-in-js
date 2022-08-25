@@ -1,0 +1,3 @@
+1. Understanding SOLID Principles in JavaScript: https://hackernoon.com/understanding-solid-principles-in-javascript-w1cx3yrv
+2. Interface Segregation Principle: https://dev.to/josuerodriguez98/interface-segregation-principle-2jnk
+3. How TO - Collapsibles/Accordion: https://www.w3schools.com/howto/howto_js_accordion.asp
