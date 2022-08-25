@@ -1,5 +1,3 @@
-// const path = require('path');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
 import path from 'path';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
@@ -10,17 +8,6 @@ export default {
     path: path.resolve(__dirname, 'dist'),
     publicPath: 'dist',
   },
-  //   devtool: 'inline-source-map',
-  //   devServer: {
-  //     open: true,
-  //     static: {
-  //       directory: path.resolve(__dirname, './dist'),
-  //     },
-  //     devMiddleware: {
-  //       index: './index.html',
-  //       writeToDisk: true, // If this is false, webpack cretes and keeps bundle in memory and runs from there.
-  //     },
-  //   },
   module: {
     rules: [
       {
@@ -42,6 +29,7 @@ export default {
       patterns: [
         { from: 'src/solid-codes', to: 'solid-codes' },
         { from: 'index.html' },
+        { from: 'src/assets', to: 'assets' },
       ],
     }),
   ],
