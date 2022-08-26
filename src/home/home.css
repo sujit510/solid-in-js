@@ -1,5 +1,10 @@
 body {
   margin: 3% 5% auto;
+  background-color: lightcyan;
+}
+.page-title {
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 18px;
 }
 .container {
   display: flex;
@@ -10,15 +15,17 @@ body {
 .header-row {
   display: flex;
   justify-content: space-between;
+  background-color: cyan;
+  margin-bottom: 25px;
 }
 .github-link {
-  padding-top: 15px;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
   color: #444;
-  cursor: pointer;
   width: 100%;
   text-align: left;
   border: none;
@@ -29,6 +36,9 @@ body {
 
 .title {
   padding: 18px;
+}
+.title-row {
+  cursor: pointer;
 }
 .title::first-letter {
   font-weight: 900;
@@ -53,7 +63,7 @@ body {
 
 .accordion .title:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 20px;
   color: #777;
   float: right;
   margin-left: 5px;
@@ -104,6 +114,7 @@ pre {
   border: 1px solid black;
   text-align: center;
   background-color: orange;
+  padding: 5px;
 }
 
 .principles-list-container {
