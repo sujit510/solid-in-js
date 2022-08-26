@@ -20,10 +20,22 @@
 2. Webpack with common config
 3. Accordion
 
-### Common commands to remember:
+### Common commands:
 
-1. Sync command to upload bundle files to S3 using S3 cli:
+1. Install npm dependencies
 
 ```
-aws s3 sync . s3://solid-in-js.sujitsingh.in --delete
+npm i
+```
+
+2. Build
+
+```
+npm run build
+```
+
+3. Sync command to upload bundle files to S3 using S3 cli:
+
+```
+aws s3 sync dist s3://<bucket-name> --delete
 ```
