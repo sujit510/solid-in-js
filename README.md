@@ -13,6 +13,7 @@
 1. AWS S3 Static site hosting + Route53
 2. Google Domain
 3. Github Repo
+4. Github Actions configuration to build and deploy to S3 bucket
 
 ### Technical Specs:
 
