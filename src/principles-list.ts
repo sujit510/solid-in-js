@@ -2,7 +2,7 @@ import { FileType } from './model';
 import { readPrincipleFile } from './utility';
 export const getPrinciples = async () => [
   {
-    title: 'SINGLE REPSONSIBILITY',
+    title: 'SINGLE RESPONSIBILITY',
     description:
       'Each module should be responsible to one, and only one, actor',
     codeBefore: await readPrincipleFile(
@@ -14,7 +14,7 @@ export const getPrinciples = async () => [
   {
     title: 'OPEN-CLOSED',
     description:
-      'Software entities (classes, modules, functions, and so on) should be open for extension, but closed for modification',
+      'Software entities (classes, modules, functions, and so on) should be open for extension, but closed for modifications',
     codeBefore: await readPrincipleFile('open-closed', FileType.before),
     codeAfter: await readPrincipleFile('open-closed', FileType.after),
   },
@@ -26,20 +26,17 @@ export const getPrinciples = async () => [
     codeAfter: await readPrincipleFile('liskov-substitution', FileType.after),
   },
   {
-    title: 'INTERFACE SAGGRIGATION',
+    title: 'INTERFACE SEGREGATION',
     description:
       'Clients should not be forced to depend upon interfaces that they do not use.',
     codeBefore: await readPrincipleFile(
-      'interface-saggrigation',
+      'interface-segregation',
       FileType.before
     ),
-    codeAfter: await readPrincipleFile(
-      'interface-saggrigation',
-      FileType.after
-    ),
+    codeAfter: await readPrincipleFile('interface-segregation', FileType.after),
   },
   {
-    title: 'DEPENDENCY INVVERSION',
+    title: 'DEPENDENCY INVERSION',
     description:
       'Most flexible systems are those in which source code dependencies refer only to abstractions, not to concretions',
     codeBefore: await readPrincipleFile(
